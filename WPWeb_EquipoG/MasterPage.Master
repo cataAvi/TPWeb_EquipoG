@@ -1,4 +1,4 @@
-﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MasterPage.Master.vb" Inherits="TPWinForm_EquipoG.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="WPWeb_EquipoG.Site1" %>
 
 <!DOCTYPE html>
 
