@@ -23,11 +23,15 @@ namespace dominio
         public List<string> Imagenes { get; set; }
         public int indiceImg { get; set; }
         public decimal Precio { get; set; }
+        public int cantidad { get; set; }
 
         //METODOS
         public Articulo()
         {
             indiceImg = 0;
+            cantidad = 1;
         }
+
+
     }
 }
