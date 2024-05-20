@@ -14,17 +14,22 @@ namespace WPWeb_EquipoG
         public List<Articulo> lista;
         protected void Page_Load(object sender, EventArgs e)
         {
-            //List<Articulo> lista;
-            //if (Session["listaProductos"] != null)
-            //    lista = (List<Articulo>)Session["listaProductos"];
-            //else {
-            //    ArticuloNegocio negocio = new ArticuloNegocio();
-            //    lista = negocio.ListarConSP();
-            //    Session.Add("listaProductos", lista);
-            //}
+            
 
-            ArticuloNegocio negocio = new ArticuloNegocio();
-            lista = negocio.ListarConSP();
+            if (Session["listaProductos"] != null)
+            {
+                lista = (List<Articulo>)Session["listaProductos"];
+            }   
+            else
+            {
+                ArticuloNegocio negocio = new ArticuloNegocio();
+                lista = negocio.ListarConSP();
+                Session.Add("listaProductos", lista);
+            }
+
+            //ArticuloNegocio negocio = new ArticuloNegocio();
+            //lista = negocio.ListarConSP();
+
 
             //dgvProductos.DataSource = lista;
             //dgvProductos.DataBind();
