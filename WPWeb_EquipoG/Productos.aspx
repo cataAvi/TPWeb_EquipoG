@@ -19,6 +19,7 @@
                     <p class="card-text"><% = item.Descripcion %></p>
                 </div>
                 <div>
+                    <a href="DetalleArt.aspx?id=<%=item.Id%>" class="btn btn-primary">Ver</a>
                     <a href="Carrito.aspx?id=<%=item.Id%>" class="btn btn-primary">Agregar</a>
                 </div>
             </div>
